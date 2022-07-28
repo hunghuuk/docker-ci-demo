@@ -1,5 +1,4 @@
 # This is a basic workflow to help you get started with Actions
-
 name: CI to Docker Hub
 
 # Controls when the workflow will run
@@ -21,9 +20,8 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-   steps:
-
-      - name: Check Out Repo 
+    steps:
+      - name: Check Out Repo
         uses: actions/checkout@v2
 
       - name: Login to Docker Hub
